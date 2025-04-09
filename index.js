@@ -2,10 +2,8 @@
 const { Client } = require("pg");
 require("dotenv").config();
 
-// Define your connection string (replace placeholders with your actual details)
 const connectionString = process.env.DB_URL;
 
-// Create a new client instance with the connection string
 const client = new Client({
   connectionString: connectionString,
 });
